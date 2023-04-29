@@ -6,6 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <script href="{{ url_for('static', filename='js/index.js')}}"></script>
         <title>{%block title%} Sitio Web {%endblock%}</title>
 {%endblock%}
 </head>
@@ -52,20 +53,6 @@
 
         {%endblock%}
     </div>
-
-
-    {%block javascript%}
-    <script type="text/javascript">
-        function deleteNote(noteId){ /* This function sends a request to the backend */
-            fetch("/delete-not", {
-                method: "POST",
-                body: JSON.stringify({ noteID: noteId }) /* delete the note */
-            }).then((_res) => {
-                window.location.href = "/"; /* refresh the page */
-            });
-        }
-    </script>
-    {%endblock%}
 {%endblock%}
 </body>
 </html>

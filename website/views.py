@@ -23,7 +23,7 @@ def home():
 
 @views.route('/delete-note', methods=['POST'])
 def delete_note():
-    note = json.loads(request.data)
+    note = json.loads(request.data) #This function expects a JSON from de js file
     noteId = note['noteId']
     note = Note.query.get(noteId)
     if note:
