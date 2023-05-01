@@ -20,3 +20,6 @@ div input {width: 50%; height: 30px; font-size: 15px; margin-bottom: 10px; margi
 
 form button {background-color:blue; color: white; border-radius: 5px; width: 70px; height: 35px; font-family: monospace; font-weight: bold;}
 
+.error {background-color: pink; padding-top: 10px;height: 30px; border-radius: 5px;}
+.success { background-color: lightgreen; padding-top: 10px;height: 30px; border-radius: 5px;}
+
