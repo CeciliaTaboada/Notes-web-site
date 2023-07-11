@@ -12,4 +12,3 @@
 
 * View the web site in your local server
 
-## This work is not finished yet, I will update it as it progresses
