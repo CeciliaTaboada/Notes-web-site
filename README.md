@@ -1,4 +1,4 @@
-# Web site created with Flask
+# Notes web site created with Flask
 
 ## Installation and running de app
 
